@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>2014280055</title>
+    </head>
+    <body>
+        <h1>2019 Güz Döneminin ilk ödevi</h1>
+		<h2>Ali Eren Doğan 2014280055</h2>
+        <form name="toplam">
+            <label>1. Sayı : </label>
+            <input type="number" id="id1"><br><br>
+            <label>2. Sayı : </label>
+            <input type="number" id="id2"><br><br>
+            <input type="button" id="toplam" value="TOPLA">
+        </form>
+        <br>
+        <div id="Toplam"></div>
+        
+        <script>
+            var btn=document.getElementById("toplam");
+            btn.onclick=function(){
+                var s1=Number(document.getElementById("id1").value);
+                var s2=Number(document.getElementById("id2").value);
+                var toplam=s1+s2;
+                alert("Girilen Sayıların Toplamı : "+toplam);
+            }
+        </script>
+	</body>
+	<body>
+		<form name="toplam">
+            <label>3. Sayı : </label>
+            <input type="text" id="id3"><br><br>
+            <label>4. Sayı : </label>
+            <input type="text" id="id4"><br><br>
+            <input type="button" id="birleştir" value="YAPIŞTIR">
+        </form>
+        <br>
+        <div id="Toplam"></div>
+        
+        <script>
+            var btn=document.getElementById("birleştir");
+            btn.onclick=function(){
+                var s3=(document.getElementById("id3").value);
+                var s4=(document.getElementById("id4").value);
+                var birleştir=s3+s4;
+                alert("Girilenler : "+birleştir);
+            }
+        </script>
+		
+    </body>
+
+</html>
